@@ -55,13 +55,13 @@ main = do
                            ("Russia", "Moscow"),
                            ("Spain", "Madrid")]
                  
-      capitalsWithHawaii = insert ("Japan", "Tokyo") capitals
+      capitalsWithJapan = insert ("Japan", "Tokyo") capitals
 
   -- Retreive Just "London" from updated capitals map
-  print $ lookup "England" capitalsWithHawaii
+  print $ lookup "England" capitalsWithJapan
 
   -- Receive Just dirdaM from fmapped updated capitals
-  print $ lookup "Spain" (fmap reverse capitalsWithHawaii)
+  print $ lookup "Spain" (fmap reverse capitalsWithJapan)
   
   -- Receive Nothing from updated capitals map
-  print $ lookup "Russia" capitalsWithHawaii
+  print $ lookup "Russia" capitalsWithJapan
